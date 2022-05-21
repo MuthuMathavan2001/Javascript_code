@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p id="one2" >JavaScript code blocks are written between</p>
+
+<button type="button" id= "one" onclick="myFunction()">Click Me!</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+
+	const element = document.querySelector('#one2');
+	console.log(element);
+	const a=getComputedStyle(element);
+	const b=a.display;
+	console.log(b);
+	if (b=='block'){
+		document.getElementById('one2').style.display='none'
+	}
+	else{
+		document.getElementById('one2').style.display='block'
+	}
+
+
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+<body>
+<h1> Calculator <h1>
+  
+<p> Add Number </p>
+
+
+<button onclick="add()">ADD</button>
+
+
+<p id="Add"></p>
+
+
+<p>SUB Number</p>
+
+
+<button onclick="sub()">SUB</button>
+
+
+<p id="Sub"></p>
+
+
+<p>MUL Number</p>
+
+
+<button onclick="mul()">MUL</button>
+
+
+<p id="Mul"></p>
+
+
+<p> DIV Number</p>
+
+<button onclick="div()">DIV</button>
+
+
+<p id="Div"></p>
+
+<script>
+
+function add() {
+	
+	let add = prompt("Please enter your number", "");
+	let add1 = prompt("Please enter your number", "");
+	let num=Number(add)+Number(add1);
+	document.getElementById("Add").innerHTML=num;	
+}
+
+function sub() {
+	let sub = prompt("Please enter your number", "" );
+	let sub1 = prompt("Please enter your number", "" );
+	let num1=Number(sub)-Number(sub1);
+	document.getElementById("Sub").innerHTML =num1;	
+}
+
+function mul() {
+	let mul = prompt("Please enter your number", "" );
+	let mul1 = prompt("Please enter your number", "" );
+	let num2=Number(mul)*Number(mul1);
+	document.getElementById("Mul").innerHTML =num2;	
+}
+
+function div() {
+	let div = prompt("Please enter your number", "" );
+	let div1 = prompt("Please enter your number", "" );
+	let num3=Number(div)/Number(div1);
+	document.getElementById("Div").innerHTML =num3;	
+}
+
+
+</script>

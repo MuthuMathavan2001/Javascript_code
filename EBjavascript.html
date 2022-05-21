@@ -1,0 +1,91 @@
+<html>
+<body>
+
+<h1>EB Bill Enter<h1>
+
+<form>
+	<label>Previous Unit :</label>
+	<input type="text" id="text"  value=""><br>
+	<label>Current Unit :</label>
+	<input type="text" id="text1"  value=""><br>
+	<label>Using Unit :</label>
+	<input type="txt" name="myInput" id="txt"  value="000"><br>
+	<label>EB Bill :</label>
+	<input type="txt1" name="myInput1" id="txt1" value="000"><br>
+
+	<button type="button" onclick="home()">Home</button>
+	<button type="button" onclick="industry()">Industry</button>
+	<button type="button" onclick="commercial()">Commercial</button>
+
+
+</form>
+<script>
+	function home(){
+
+		var a=document.getElementById("text").value;
+		console.log(a);
+		var b=document.getElementById("text1").value;
+		console.log(b);
+		var c=b-a;
+		console.log(c)
+		if(c<=100){
+        	bill= 0;
+		}
+    	else if(c<=200){
+        	bill=(c-100)*3.50;
+    	}
+    	else {
+        	bill=(c-100)*4.50;
+    	}
+
+    	let n = document.querySelector('input[name="myInput"]').value = c ;
+    	console.log(n);
+    	let n1=document.querySelector('input[name="myInput1"]').value = bill ;
+    	console.log(n1);
+		
+	}
+
+	function industry(){
+		var a=document.getElementById("text").value;
+		console.log(a);
+		var b=document.getElementById("text1").value;
+		console.log(b);
+		var c=b-a;
+		console.log(c);
+		if(c<=100){
+        	bill=c*4.50;
+		}
+    	else if(c<=200){
+        	bill=c*5.50;
+    	}
+    	else{
+        	bill=c*6.50;
+        }
+        let n=document.querySelector('input[name="myInput"]').value = c ;
+        console.log(n);
+    	let n1=document.querySelector('input[name="myInput1"]').value = bill;
+    	console.log(n1);
+	}
+
+	function commercial(){
+		var a=document.getElementById("text").value;
+		console.log(a);
+		var b=document.getElementById("text1").value;
+		console.log(b);
+		var c=b-a;
+		console.log(c);
+		if(c<=100){
+        	bill=c*6.50;
+		}
+   		else if(c<=200){
+        	bill=c*7.50;
+   		}
+    	else{
+        	bill=c*8.50;
+    	}
+    	let n=document.querySelector('input[name="myInput"]').value=c;
+    	let n1=document.querySelector('input[name="myInput1"]').value=bill;
+	}
+</script>
+</body>
+</html>

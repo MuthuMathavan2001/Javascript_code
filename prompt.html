@@ -1,0 +1,47 @@
+
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The prompt() Method</h2>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo2">hi
+<p id="demo">hi</p>
+<p id="demo1">hi</p>
+</p>
+<script>
+function myFunction(ids) {
+  let person = prompt("Please enter your name", "");
+
+  let person1 = prompt("Please enter your adderss", "");
+
+  let color1 = prompt("Please enter your color", "");
+
+  
+  document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today?";
+  
+   
+  document.getElementById("demo1").innerHTML =
+   "Hello " + person1 + "! This is  you adderss?";
+   
+  const element = document.querySelectorAll("#demo,#demo1,#demo2");
+  console.log(element);
+ 
+  for (let i = 0; i < element.length; i++) {
+  element[i].style.color =color1;
+  }
+
+  // document.getElementById("demo").style.color = color1;
+  // document.getElementById("demo1").style.color = color1;
+  
+}
+   </script>
+   <a href="sum.html">GO to Sum page</a>
+
+</body>
+</html>
